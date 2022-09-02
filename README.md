@@ -22,7 +22,14 @@ and allows to be extended to any scripting runtime.
 - [Usage](#usage)
 
 ## Showcase 
-Coming soon. :)
+
+### Running a Dart file
+https://user-images.githubusercontent.com/4450312/188239234-7f4d03f3-01fd-4f17-9911-aa584d27ae75.mp4
+
+### Running a Markdown file
+An example of previewing markdown files via the wonderful [Glow](https://github.com/charmbracelet/glow) reader.
+
+https://user-images.githubusercontent.com/4450312/188239266-54115754-1fc0-4122-91df-4b67d084d1ff.mp4
 
 ## Installation 
 Using [vim-plug](https://github.com/junegunn/vim-plug)
@@ -87,3 +94,6 @@ vim.api.nvim_set_keymap(
   { noremap = true }
 )
 ```
+
+## Credits
+Made with love and tears on a Chromebook tablet.

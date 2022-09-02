@@ -12,7 +12,7 @@
 
 `termify.nvim` is a simple plugin for Neovim, written completely in Lua. 
 It provides the capability to run any script directly in your favorite editor
-and display the output in a disposable pop-up window. Termify is customizable
+and displays the output in a disposable pop-up window. Termify is customizable
 and allows to be extended to any scripting runtime.
  
 ## Table of Contents

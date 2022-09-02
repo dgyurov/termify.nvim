@@ -38,8 +38,8 @@ local function center(str)
 end
 
 local function getFileExtension(path)
-  local filetype = path:match("^.+(%..+)$")
-  return filetype:sub(2)
+  local filetype = path:match("[^.]+$")
+  return ternary(filetype == path, nil, filetype)
 end
 
 -- Window actions
@@ -111,8 +111,8 @@ termify.run = function()
   local path = api.nvim_buf_get_name(0)
   local filetype = getFileExtension(path)
 
-  if termify.config.supportedFiletypes[filetype] == nil then
-    vim.notify_once("  Unsuported filetype: " .. filetype, vim.log.levels.ERROR)
+  if not filetype or not termify.config.supportedFiletypes[filetype] then
+    vim.notify("  Termify: Unsuported filetype", vim.log.levels.ERROR)
     return
   end
 

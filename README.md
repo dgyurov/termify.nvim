@@ -6,7 +6,7 @@
             
 ```
 
-# Termify.nvim
+# termify.nvim
 
 ## What is Termify?
 
@@ -44,9 +44,9 @@ use 'dgyurov/termify.nvim'
 Termify comes with the following default configuration:
 ```lua
 {
-  -- A table which has filetypes as keys and executable as value
+  -- A table which has file types as keys and executable as value
   -- Note: The executables should be already installed on your system and 
-  -- be capable of accepting a filepath as an argument. The filepath will be
+  -- be capable of accepting a file path as an argument. The file path will be
   -- supplied by Termify.
   supportedFiletypes = {
     ['swift'] = "swift",
@@ -55,8 +55,10 @@ Termify comes with the following default configuration:
     ['lua'] = "lua",
     ['md'] = "glow",
   },
+  
   -- Key that can be used to close the Termify window.
   closeMappings = { '<esc>', 'q' },
+  
   -- Border style of the Termify window.
   -- Possible values: 'none', 'single', 'double', 'rounded', 'solid', 'shadow'
   borderStyle = 'rounded'
